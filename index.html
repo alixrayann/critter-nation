@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Critter Corner</title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="layout_style.css">
+   </head>
+<style>
+
+.main-nav {   padding: 0 0 0 0; }
+.main-nav * { margin: 0 0 0 0 ; }
+
+nav.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.main-nav ul li,
+nav.main-nav ul a {
+  text-decoration: none;
+  color: purple;
+  padding: 5px 20px 5px 5px;
+}
+
+nav.main-nav ul li:hover, nav.main-nav ul li:active {   background-color: lavender; }
+
+a#navicon { display: none; }
+
+a#navicon { display: block; }
+  nav.main-nav ul { display: none; }
+  a#navicon:hover+ul, nav.main-nav ul:hover {
+    display:block;
+  }
+</style>
+<div class="layout">
+   <header>
+   <h1>
+   CritterCorner.com
+   </h1>
+   <body>
+      <h4>
+      Adopt Don't Shop!
+      </h4>
+      </header>
+      <nav class="main-nav">
+<!--Added navicon for mobile browser use-->
+<a href="#" id="navicon"><img src="navicon.png" width="32px"/></a>
+          <ul>
+  <li><a href="index.html">Home Page</a></li>
+  <li><a href="animals.html">Adoptable Pets</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+      </nav>
+      <main>
+      <h2>
+      Your next best friend is a click away...
+      </h2>
+           <p>Every animal deserves a loving, caring home. Critter Corner gives them a second chance at life by providing a simple way to browse through all the adoptable pets that fit your wants and needs! We strive to find the best family possible for each and every one of our pets and make it our mission to make their life the best it can be. We treat all of the animals that comes into our rescue with the utmost care and respect and care for them as if they are our own.</p>
+           <p class="center"><img src="https://img.jakpost.net/c/2019/07/10/2019_07_10_76067_1562741510._large.jpg" alt="two puppies in box" width="500" height="334"></p>
+      </main>
+      <footer>
+         Copyright 2022 by Alix Foust
+      </footer>
+   </body>
+</div>
+</html>

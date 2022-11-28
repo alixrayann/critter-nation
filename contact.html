@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title> Contact Us
+        </title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="layout_style.css">
+   </head>
+<style>
+form {
+border-radius: 25px;
+background: lavender;
+padding: 30px 50px 30px 50px;
+margin: 30px 50px 30px 50px;
+}
+
+.main-nav {   padding: 0 0 0 0; }
+.main-nav * { margin: 0 0 0 0 ; }
+
+nav.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.main-nav ul li,
+nav.main-nav ul a {
+  text-decoration: none;
+  color: purple;
+  padding: 5px 20px 5px 5px;
+}
+
+nav.main-nav ul li:hover, nav.main-nav ul li:active {   background-color: lavender; }
+
+a#navicon { display: none; }
+
+a#navicon { display: block; }
+  nav.main-nav ul { display: none; }
+  a#navicon:hover+ul, nav.main-nav ul:hover {
+    display:block;
+  }
+
+</style>
+<div class="layout">
+   <header>
+   <h1>
+   CritterCorner.com
+   </h1>
+   <body>
+      <h4>
+      Adopt Don't Shop!
+      </h4>
+      </header>
+      <nav>
+<nav class="main-nav">
+<!--Added navicon for mobile browser use-->
+<a href="#" id="navicon"><img src="navicon.png" width="32px"/></a>
+<ul>
+<li><a href="index.html">Home Page</a></li>
+<li><a href="animals.html">Adoptable Pets</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+      </nav>
+      <main>
+      <h2>
+      Contact us at Critter Corner!
+      </h2>
+      <form action="mailto:alix.foust@ucdenver.edu" method="POST">
+	<p> Contact us!</p><br>
+         First name: <input type = "text" name = "firstname" /><br>
+         Last name: <input type = "text" name = "lastname" /><br>
+         E-mail: <input type = "text" name = "email" /><br>
+         Phone Number: <input type = "text" name = "phone" /><br>
+	<br>
+	<p>Comments, questions or concerns:</p>
+	<select name = "dropdown">
+	<option value = "adoption" selected>Adoption</option>
+	<option value = "vaccinations">Vaccinations</option>
+	<option value = "neuterspay">Spaying & Neutering</option>
+	<option value = "donation">Donation</option>
+	<option value = "other">Other Questions</option>
+         </select>
+	<textarea rows = "5" cols = "50" name = "description">
+	</textarea>
+	<p>What is your preferred method of communication?:</p>
+	<input type = "checkbox" name = "email" value = "on"> E-mail
+        <input type = "checkbox" name = "phone" value = "on"> Phone
+	<br>   <br>
+	<input type = "submit" name = "submit" value = "Submit" />
+      </form>
+<aside>
+
+      </main>
+      <footer>
+         Copyright 2022 by Alix Foust
+      </footer>
+   </body>
+</div>
+</html>

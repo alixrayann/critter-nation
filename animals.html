@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Critter Corner</title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="layout_style.css">
+	<script src="wishlist.js" async></script>
+   </head>
+<style>
+.animals {
+display: grid;
+grid-template-columns: auto auto auto;
+grid-gap: 25px;
+padding: 75px 100px 75px 100px;
+text-align: center;
+font-family: verdana;
+}
+
+.dogs, .cats, .rodents, .reptiles, .birds, .fish {
+border-radius: 25px;
+background: lavender;
+}
+
+aside {
+float: right;
+width: 30%;
+padding-bottom: 100px;
+}
+
+.main-nav {   padding: 0 0 0 0; }
+.main-nav * { margin: 0 0 0 0 ; }
+
+nav.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.main-nav ul li,
+nav.main-nav ul a {
+  text-decoration: none;
+  color: purple;
+  padding: 5px 20px 5px 5px;
+}
+
+nav.main-nav ul li:hover, nav.main-nav ul li:active {   background-color: lavender; }
+
+a#navicon { display: none; }
+
+a#navicon { display: block; }
+  nav.main-nav ul { display: none; }
+  a#navicon:hover+ul, nav.main-nav ul:hover {
+    display:block;
+  }
+</style>
+<div class="layout">
+   <header>
+   <h1>
+   CritterCorner.com
+   </h1>
+   <body>
+      <h4>
+      Adopt Don't Shop!
+      </h4>
+      </header>
+      <nav class="main-nav">
+<!--Added navicon for mobile browser use-->
+<a href="#" id="navicon"><img src="navicon.png" width="32px"/></a>
+          <ul>
+  <li><a href="index.html">Home Page</a></li>
+  <li><a href="animals.html">Adoptable Pets</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+      </nav>
+      <main>
+      <h2>
+      Adoptable Pets
+      </h2>
+<div class="animals">
+	<div class="dogs" id="dogs">
+		<img src="dog.png" width="100" height="100">
+		<h3>Dogs</h3>
+		<p>$50-$150</p>
+		<p>Multiple dog breeds up for adoption here!</p>
+		<button id="dogbtn" onclick="addToCart()">Add to Cart</button>
+		</div>
+	<div class="cats" id="cats">
+		<img src="cat.png" width="100" height="100">
+		<h3>Cats</h3>
+		<p>$20-$80</p>
+		<p>Find a cat that fits your personality today!</p>
+		<button id="catbtn" onclick="addToCart()">Add to Cart</button>
+		</div>
+	<div class="rodents" id="rodents">
+		<img src="rat.png" width="100" height="100">
+		<h3>Rodents</h3>
+		<p>$5-$25</p>
+		<p>Rabbits, guinea pigs, rats, mice, hamsters, and gerbils found here!</p>
+		<button id="rodentbtn" onclick="addToCart()">Add to Cart</button>
+		</div>
+	<div class="reptiles" id="reptiles">
+		<img src="lizard.png" width="100" height="100">
+		<h3>Reptiles</h3>
+		<p>$15-$50</p>
+		<p>Snakes, geckos, turtles, chameleons, even bearded dragons!</p>
+		<button id="reptilebtn" onclick="addToCart()">Add to Cart</button>
+		</div>
+	<div class="birds" id="birds">
+		<img src="bird.png" width="100" height="100">
+		<h3>Birds</h3>
+		<p>$25-$100</p>
+		<p>Parakeets, cockatiels, doves, canaries, parrots and more!</p>
+		<button id="birdbtn" onclick="addToCart()">Add to Cart</button>
+		</div>
+	<div class="fish" id="fish">
+		<img src="fish.png" width="100" height="100">
+		<h3>Fish</h3>
+		<p>$5-$20</p>
+		<p>Browse our selection of beta fish, minnows, and goldfish here!</p>
+		<button id="fishbtn" onclick="addToCart()">Add to Cart</button>
+		</div>
+</div>
+<aside>
+CART
+</aside>
+      </main>
+      <footer>
+         Copyright 2022 by Alix Foust
+      </footer>
+   </body>
+</div>
+</html

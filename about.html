@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title> About us
+        </title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="layout_style.css">
+   </head>
+<style>
+
+.main-nav {   padding: 0 0 0 0; }
+.main-nav * { margin: 0 0 0 0 ; }
+
+nav.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.main-nav ul li,
+nav.main-nav ul a {
+  text-decoration: none;
+  color: purple;
+  padding: 5px 20px 5px 5px;
+}
+
+nav.main-nav ul li:hover, nav.main-nav ul li:active {   background-color: lavender; }
+
+a#navicon { display: none; }
+
+a#navicon { display: block; }
+  nav.main-nav ul { display: none; }
+  a#navicon:hover+ul, nav.main-nav ul:hover {
+    display:block;
+  }
+</style>
+<div class="layout">
+   <header>
+   <h1>
+   CritterCorner.com
+   </h1>
+   <body>
+      <h4>
+      Adopt Don't Shop!
+      </h4>
+      </header>
+      <nav class="main-nav">
+<!--Added navicon for mobile browser use-->
+<a href="#" id="navicon"><img src="navicon.png" width="32px"/></a>
+          <ul>
+  <li><a href="index.html">Home Page</a></li>
+  <li><a href="animals.html">Adoptable Pets</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+      </nav>
+      <main>
+      <h2>
+      About Critter Corner
+      </h2>
+           <p>Critter Corner is a nonprofit organization that has been dedicated to rescuing animals since 2001 and have rescued over 250,000 animals so far. We take in any and all animals brought to us, including dogs, cats, rodents, birds, and reptiles. We take in stray, abandoned, or surrendered animals regardless of their age, health, breed, or temperment. We provide our pets with a safe and loving home to reside in with all the resources they need until they find their new family. In the mean time, we also provide a range of health services, such as vaccinations, microchips, spaying and neutering, and more. We proudly advocate for and care for every animal brought into our care without exception.</p>
+           <h3>
+           Our Rescue Team
+           </h3>
+           <ul>
+  <li>John Smith, Rescue Manager</li>
+  <li>Mary Johnson, Rescue Squad</li>
+  <li>Patrick Williams, Rescue Squad</li>
+  <li>Sarah Brown, Rescue Squad</li>
+  <li>Alix Foust, Veterinarian</li>
+  <li>Richard Martinez, Vet Technician</li>
+  <li>Emily Miller, Vet Technician</li>
+  <li>William Jones, Care Team</li>
+  <li>Paul Davis, Care Team</li>
+  <li>Steven Garcia, Care Team</li>
+</ul>
+      </main>
+      <footer>
+         Copyright 2022 by Alix Foust
+      </footer>
+   </body>
+</div>
+</html>
